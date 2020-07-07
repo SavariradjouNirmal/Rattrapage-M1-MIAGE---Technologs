@@ -26,9 +26,6 @@ public class JwtManager {
     private static final SecretKey SECRET_KEY = MacProvider.generateKey( SIGNATURE_ALGORITHM );
     private static final TemporalAmount TOKEN_VALIDITY = Duration.ofHours( 4L );
 
-    /**
-     * Builds a JWT with the given subject and role and returns it as a JWS signed compact String.
-     */
     public String createToken( final String subject, final String role ) {
         final Instant now = Instant.now();
         final Date expiryDate = Date.from( now.plus( TOKEN_VALIDITY ) );
@@ -41,10 +38,6 @@ public class JwtManager {
                    .compact();
     }
 
-    /**
-     * Parses the given JWS signed compact JWT, returning the claims.
-     * If this method returns without throwing an exception, the token can be trusted.
-     */
     public Jws<Claims> parseToken( final String compactToken )
             throws ExpiredJwtException,
                    UnsupportedJwtException,
