@@ -19,7 +19,7 @@ public class JwtAuthenticationFilter implements Filter {
     private static final java.util.logging.Logger LOG = Logger.getLogger( JwtAuthenticationFilter.class.getName() );
 
     private static final String AUTH_HEADER_KEY = "Authorization";
-    private static final String AUTH_HEADER_VALUE_PREFIX = "Bearer "; // with trailing space to separate token
+    private static final String AUTH_HEADER_VALUE_PREFIX = "Bearer ";
 
     private static final int STATUS_CODE_UNAUTHORIZED = 401;
 
@@ -78,15 +78,3 @@ public class JwtAuthenticationFilter implements Filter {
         return null;
     }
 }
-© 2020 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Help
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
