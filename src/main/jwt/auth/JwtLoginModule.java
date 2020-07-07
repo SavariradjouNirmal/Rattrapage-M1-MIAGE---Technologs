@@ -30,7 +30,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-@SuppressWarnings( "UnusedDeclaration" ) // used by the container
+@SuppressWarnings( "UnusedDeclaration" )
 public class JwtLoginModule implements LoginModule {
 
     private static final Logger LOG = Logger.getLogger( JwtLoginModule.class.getName() );
