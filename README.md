@@ -7,7 +7,7 @@ Consignes générales :
 • La durée du partiel est de 2 heures.
 
 • Le rendu doit se faire sur un repository Github, avec l’envoi d’un email avec le lien au
-adresse suivantes : didier.courtaud@univ-evry.fr et laurent.breda@univ-evry.fr
+adresse suivantes : 
 
 • Il y a plusieurs sujets
 
